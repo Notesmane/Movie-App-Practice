@@ -1,3 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+html {
+  height: 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.infoContainer {
+  margin: 7%;
+}
+
+.infoContainer p {
+  font-size: 1.5em;
+  color: white;
+  line-height: 2em;
+}
+
+.mainApp {
+  margin: 0;
+  /* background: url('./assets/popcornsmall.jpg') no-repeat center center/cover; */
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+/* .mainContainer {
+
+} */
+
+input {
+  background: whitesmoke;
+  border: 1px solid blue;
+  border-radius: 5px;
+  /* margin-left: 5%; */
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: center; */
+
+}
+
+::placeholder {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  /* margin-left: 5%; */
+}
+
+.mainLeftContainer {
+  margin-top: 10%;
+}
+
+.mainRightContainer {
+  background-color: rgba(36, 36, 36, 0.95);
+  border-radius: 3px;
+  width: 300px;
+  margin-top: 10%;
+  /* border: 2px solid black; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.submitDiv {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 5% 0;
+}
+
+.submitButton {
+  background-color: darkgrey;
+  border: 1px solid whitesmoke;
+  /* margin-left: 10px; */
+  width: 20%;
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: center; */
+  /* margin-left: 20%; */
+}
+
+.App:before {
+  content: '';
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .App {
   text-align: center;
 }
@@ -7,11 +114,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -21,18 +123,10 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: yellow;
 }
 
 .App-link {
-  color: #61dafb;
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
